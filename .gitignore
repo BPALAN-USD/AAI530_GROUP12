@@ -3,5 +3,8 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 
+# Streamlit secrets (local only)
+.streamlit/secrets.toml
+
 # Optional local artifacts
 *.log

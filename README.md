@@ -2,6 +2,13 @@
 
 This project centers around the notebook `SmartParking.ipynb`, which analyzes smart-parking session data from monthly CSV exports in `Data/`.
 
+### Executive dashboard (Streamlit)
+
+This repo also includes an executive dashboard you can run locally:
+
+- **App**: `streamlit_app.py`
+- **What it provides**: KPIs, interactive predictions (duration/cost/occupancy), and occupancy forecasting (fast Random Forest; optional LSTM).
+
 ### What the notebook shows
 
 - **Load & explore parking sessions** from local CSVs (no Snowflake dependency).
@@ -48,7 +55,7 @@ Either way, use the project virtual environment as the kernel.
 
 ### 1) Create the Python environment
 
-From the `iot_project/` directory:
+From the `AAI530_GROUP12/` directory:
 
 ```bash
 python3 -m venv .venv
@@ -57,7 +64,15 @@ python -m pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 ```
 
-### 2) Register the kernel for Jupyter
+### 2) Run the Streamlit executive dashboard
+
+With the venv activated:
+
+```bash
+streamlit run streamlit_app.py
+```
+
+### 3) Register the kernel for Jupyter
 
 Still with the venv activated:
 
@@ -73,13 +88,13 @@ python -m jupyter kernelspec list
 
 You should see an entry like `smartparking`.
 
-### 3A) Run in VS Code / Cursor
+### 4A) Run in VS Code / Cursor
 
 - Open `SmartParking.ipynb`
 - Use the **kernel picker** and select **Python (smartparking)**
 - Run cells top-to-bottom
 
-### 3B) Run with Jupyter Lab
+### 4B) Run with Jupyter Lab
 
 With the venv activated:
 
