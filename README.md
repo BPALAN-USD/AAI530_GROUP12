@@ -9,6 +9,11 @@ This repo also includes an executive dashboard you can run locally:
 - **App**: `streamlit_app.py`
 - **What it provides**: KPIs, interactive predictions (duration/cost/occupancy), and occupancy forecasting (fast Random Forest; optional LSTM).
 
+#### Screenshots
+
+![Streamlit dashboard — view 1](docs/StreamlitDashboard-View1.png)
+![Streamlit dashboard — view 2](docs/StreamlitDashboard-View2.png)
+
 ### What the notebook shows
 
 - **Load & explore parking sessions** from local CSVs (no Snowflake dependency).
